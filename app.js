@@ -34,7 +34,6 @@ function playSong(){
 
     audio.play();
 }
-
 //Zene megállíátsa
 function pauseSong(){
 
@@ -45,7 +44,6 @@ function pauseSong(){
     audio.pause();
 
 }
-
 //Zene léptetése előre
 function nextSong(){
 
@@ -74,7 +72,6 @@ function prevSong(){
     playSong();
 }
 
-
 //Zene lejátszása - eseménykezelés
 playBtn.addEventListener("click", function(){
 
@@ -87,12 +84,13 @@ playBtn.addEventListener("click", function(){
         playSong();
    }
 })
-
 //Zene léptetése - eseménykezelés
 nextBtn.addEventListener("click", nextSong);
 prevBtn.addEventListener("click", prevSong);
 
 //Ha a zene végetért lépjen a következőre
 audio.addEventListener("ended", nextSong);
+
+console.log("Az oldal sikeresen betöltődött")
 
 
